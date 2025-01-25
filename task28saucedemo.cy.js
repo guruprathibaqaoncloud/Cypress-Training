@@ -22,7 +22,7 @@ describe("Swaglab Website", function () {
     cy.get("#add-to-cart-sauce-labs-bike-light").click();
     cy.get("#add-to-cart-sauce-labs-onesie").click();
   });
-  it("Add to cart for id1(low to high)", function () {
+  it.only("Add to cart for id1(low to high)", function () {
     cy.visit("https://www.saucedemo.com/");
     cy.get('input[id="user-name"]').type("standard_user");
     cy.get('[id="password"]').type("secret_sauce");
